@@ -1,0 +1,9 @@
+html {
+  @apply h-full w-full;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  @apply h-full w-full;
+}
