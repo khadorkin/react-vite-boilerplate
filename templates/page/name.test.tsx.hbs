@@ -1,0 +1,16 @@
+import React from "react"
+import { render, screen } from "@testing-library/react"
+import { {{pascalCase name}} } from "./{{kebabCase name}}.component"
+import { {{pascalCase name}}Props } from "./{{kebabCase name}}.types"
+
+const props = {} as {{pascalCase name}}Props
+
+describe("<{{pascalCase name}}>", () => {
+  it("renders {{pascalCase name}}", async () => {
+    render(<{{pascalCase name}} />)
+
+    // #TODO Amend this following for the {{pascalCase name}} component
+    const element = screen.getByText(/SomeText/i)
+    expect(element).toBeInTheDocument()
+  })
+})

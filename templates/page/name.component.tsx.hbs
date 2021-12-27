@@ -1,0 +1,13 @@
+import React, { FC } from "react"
+import { {{pascalCase name}}Props } from "./{{kebabCase name}}.types"
+
+const {{pascalCase name}}: FC<{{pascalCase name}}Props> = (props) => {
+  return (
+    <div>
+      <p>{{titleCase name}} component</p>
+      {props.children}
+    </div>
+  )
+}
+
+export { {{pascalCase name}} }

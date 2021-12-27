@@ -1,0 +1,38 @@
+import { assign } from "xstate"
+import { createModel } from "xstate/lib/model"
+import { createXStateContext } from "../../lib/createXStateContext";
+
+interface Item {
+  id: string
+}
+
+export const {{camelCase name}}Model = createModel(
+  {
+    items: [] as Item[],
+  },
+  {
+    events: {
+      ADD: (id: string) => ({ id }),
+    },
+  },
+)
+
+export const {{camelCase name}}Machine = {{camelCase name}}Model.createMachine({
+  id: "{{camelCase name}}",
+  initial: "idle",
+  states: {
+    idle: {},
+  },
+},
+  {
+    actions: {},
+    services: {},
+  }
+)
+
+export const [
+  {{pascalCase name}}Provider,
+  use{{pascalCase name}}Service,
+  useSelected{{pascalCase name}},
+  create{{pascalCase name}}Selector,
+] = createXStateContext({{camelCase name}}Machine);

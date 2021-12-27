@@ -1,0 +1,5 @@
+import { create{{pascalCase name}}Selector } from "./{{kebabCase name}}.machine"
+
+export const getItems = create{{pascalCase name}}Selector(
+  (state) => state.context.items,
+);

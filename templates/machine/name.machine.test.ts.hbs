@@ -1,0 +1,18 @@
+import { {{camelCase name}}Machine } from "./{{kebabCase name}}.machine"
+import { interpret } from "xstate"
+
+it("should eventually reach "success"", (done) => {
+  const {{camelCase name}}Service = interpret({{camelCase name}}Machine).onTransition((state) => {
+    // this is where you expect the state to eventually
+    // be reached
+    if (state.matches("idle")) {
+      done()
+    }
+  });
+
+  {{camelCase name}}Service.start()
+
+  // send zero or more events to the service that should
+  // cause it to eventually reach its expected state
+  {{camelCase name}}Service.send({ type: "ADD", id: "0012" })
+});

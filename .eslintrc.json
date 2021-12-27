@@ -37,12 +37,12 @@
         "allowSingleLine": true
       }
     ],
-    // "import/no-unresolved": [
-    //   "error",
-    //   {
-    //     "ignore": []
-    //   }
-    // ],
+    "import/no-unresolved": [
+      "error",
+      {
+        "ignore": ["@assets", "@components", "@pages"]
+      }
+    ],
     "no-console": "warn",
     "react/react-in-jsx-scope": "off",
     "react/no-array-index-key": "warn",

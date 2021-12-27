@@ -2,11 +2,12 @@
   "name": "bcv-pwa-boilerplate",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview",
+    "dev": "vite",
+    "generate": "plop",
+    "lint-staged": "npx lint-staged",
     "prepare": "husky install",
-    "lint-staged": "npx lint-staged"
+    "preview": "vite preview"
   },
   "dependencies": {
     "i18next": "^21.6.3",
@@ -31,6 +32,7 @@
     "husky": "^7.0.4",
     "install": "^0.13.0",
     "lint-staged": "^12.1.4",
+    "plop": "^3.0.5",
     "postcss": "^8.4.5",
     "prettier": "2.5.1",
     "tailwindcss": "^3.0.7",
