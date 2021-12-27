@@ -1,0 +1,56 @@
+{
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.localesPaths": "src/locales",
+  "i18n-ally.sortKeys": true,
+  "editor.formatOnSave": false,
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false
+  },
+  "[JSON]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "files.watcherExclude": {
+    "**/.git/**": true,
+    "**/node_modules/**": true
+  },
+  "html.format.wrapLineLength": 200,
+  "html.format.wrapAttributesIndentSize": 2,
+  "html.format.wrapAttributes": "auto",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "cSpell.words": [
+    "headlessui",
+    "Incharge",
+    "pnpm",
+    "prerender",
+    "semibold",
+    "tailwindcss",
+    "unplugin",
+    "vite",
+    "vitejs",
+    "xstate"
+  ]
+}

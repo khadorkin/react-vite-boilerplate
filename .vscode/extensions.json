@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "antfu.iconify",
+    "bradlc.vscode-tailwindcss",
+    "csstools.postcss",
+    "lokalise.i18n-ally",
+    "mattpocock.xstate-vscode",
+    "streetsidesoftware.code-spell-checker",
+    "usernamehw.errorlens",
+    "wayou.vscode-todo-highlight"
+  ]
+}
