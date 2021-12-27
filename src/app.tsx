@@ -1,8 +1,11 @@
 import { FC } from "react"
+import { useTranslation } from "react-i18next"
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom"
 
 const Home: FC = () => {
-  return <Link to={"/about"}>Home</Link>
+  const { t } = useTranslation()
+
+  return <Link to={"/about"}>{t("home")}</Link>
 }
 
 const About: FC = () => {
